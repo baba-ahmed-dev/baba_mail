@@ -1,0 +1,46 @@
+{% extends "mail/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="bar">
+      <button class="btn btn-sm  use" id="profile">{{ request.user.email|upper|first }}</button>
+      <p class="email" id="profile">{{request.user.email}}</p>
+      <div class="head">
+        <button class="btn btn-sm mybutton" id="inbox">Inbox</button>
+        <button class="btn btn-sm mybutton" id="compose">Compose</button>
+        <button class="btn btn-sm mybutton" id="sent">Sent</button>
+        <button class="btn btn-sm mybutton" id="archived">Archived</button>
+        <a class="btn btn-sm mybutton" href="{% url 'logout' %}">Log Out</a>
+      </div>
+    </div>
+    <hr>
+
+    <div id="emails-view">
+        <div id="email">
+
+        </div>
+    </div>
+
+    <div id="compose-view">
+        <h5>New Email</h5>
+        <form id="compose-form" onsubmit="return false">
+            <div class="d-flex justify-content-between form-group">
+                <div class="compt">From: </div>
+                <div class="comp"><input disabled class="form-control" value="{{ request.user.email }}"></div>
+            </div>
+            <div class="d-flex justify-content-between form-group">
+                <div class="compt">To: </div>
+                <div class="comp"><input id="compose-recipients" class="form-control"></div>
+            </div>
+            <div class="form-group">
+                <input class="form-control" id="compose-subject" placeholder="Subject">
+            </div>
+            <textarea class="form-control" id="compose-body" placeholder="Body"></textarea>
+            <input id="combose-submit" value="Sent" type="submit" class="btn buttonTwo"/>
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'mail/inbox.js' %}"></script>
+{% endblock %}

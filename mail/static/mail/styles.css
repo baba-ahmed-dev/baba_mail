@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif, serif;
+}
+
+.container{
+    height: calc(100vh - 160px);
+}
+
+body{
+    font-family: ui-sans-serif;
+}
+h2{
+    color: #17a2b8;
+}
+
+/* nnavbar */
+.nav{
+    background: #17a2b8;
+    width: 100%;
+    height: 100px;
+}
+.nav-p{
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    font-family: sans-serif, serif;
+}
+.links{
+    align-self: center;
+}
+.logo span{
+    color: #ffc107;;
+}
+/* end navbar */
+
+/*   footer */
+.foot{
+    position: fixed;
+    bottom: 0px;
+    background: #17a2b8;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.foot p{
+    align-self: center;
+    margin-bottom: 0;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif, serif;
+}
+
+/*   end footer */
+
+/* login   */
+.log-p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+.log{
+    align-self: center;
+    width: 100%;
+}
+
+.btn{
+    background: #17a2b8 !important;
+}
+.log a{
+    color: #17a2b8 !important;
+}
+
+/*  end login */
+
+/*   inbox     */
+.compose-view h5{
+    text-align: center;
+    color: #117a8b;
+}
+
+.email{
+    position: relative;
+    top: -47px;
+    left: 70px;
+    font-size: 18px;
+    color: #117a8b;
+    opacity: 1;
+    margin-bottom: 0!important;
+}
+.use{
+    width: 60px;
+    height: 45px;
+    font-weight: bold;
+    position: relative;
+    bottom: 24px;
+    border: 2px solid #ffc107 !important;
+    background: #17a2b8 !important;
+    color: white !important;
+    border-radius: 0px !important;
+    font-size: 26px;
+}
+
+.comp{
+    width: 80%;
+}
+.compt{
+    align-self: center;
+}
+.form-group{
+    margin-bottom: 7px !important;
+}
+/* end inbox */
+
+.bar{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.userEmail{
+    color: #dee2e6;
+    text-align: center;
+}
+.head{
+    text-align: center;
+    height: 45px;
+    text-align: center;
+    height: 45px;
+    position: relative;
+    bottom: -12px;
+}
+hr{
+    background: #17a2b8;
+}
+h3{
+    color: #17a2b8;
+}
+.mybutton{
+    border: 1px solid #fff !important;
+    background: #17a2b8 !important;
+    color: white !important;
+    border-radius: 0px !important;
+    height: 40px;
+    font-size: 17px;
+}
+
+.mybutton:hover{
+    background: #ffc107 !important;
+}
+@keyframes bH{
+    from{
+        z-index: 1;
+        
+    }
+    to{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+@-moz-keyframes bH{
+    from{
+        z-index: 1;
+        
+    }
+    to{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+@-webkit-keyframes bH{
+    from{
+        z-index: 1;
+        
+    }
+    to{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+
+.buttonTwo{
+    border: 1px solid #fff !important;
+    background-color: #17a2b8 !important;
+    color: #fff;
+    margin-top: 5px;
+    width: 100%;
+}
+.buttonTwo:hover{
+    color: #fff;
+}
+
+textarea {
+    border-color: #17a2b8 !important;
+    height: 100px !important;
+}
+input{
+    border-color: #17a2b8 !important;
+}
+
+.myDiv{
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    border-top: 1px solid #17a2b8;
+    text-align: center;
+}
+.myDiv:last-of-type{
+    border-bottom: 1px solid #17a2b8;
+}
+.myDiv:hover{
+    animation: hovring 0.5s ease-in-out 0s 1 normal forwards running;
+}
+@keyframes hovring{
+    from{
+        z-index: 1;
+        
+    }
+    to{
+        z-index: 2;
+        box-shadow: inset 0 -1px 0 0 rgb(100 121 143 / 12%);
+        border-right: 1px solid #17a2b8;
+        border-left: 1px solid #17a2b8;
+        font-weight: bold;
+    }
+}
+
+@-moz-keyframes hovring{
+    from{
+        z-index: 1;
+        
+    }
+    to{
+        z-index: 2;
+        box-shadow: inset 0 -1px 0 0 rgb(100 121 143 / 12%);
+        border-right: 1px solid #17a2b8;
+        border-left: 1px solid #17a2b8;
+        font-weight: bold;
+    }
+}
+@-webkit-keyframes hovring{
+    from{
+        z-index: 1;
+        
+    }
+    to{
+        z-index: 2;
+        box-shadow: inset 0 -1px 0 0 rgb(100 121 143 / 12%);
+        border-right: 1px solid #17a2b8;
+        border-left: 1px solid #17a2b8;
+        font-weight: bold;
+    }
+}
+
+.sp1{
+    margin-left: 1px;
+    float: left;
+}
+.sp2{
+    margin: auto;
+}
+.sp3{
+    margin-right: 1px;
+    float: right;
+}
+
+.view{
+    text-align: left;
+}
