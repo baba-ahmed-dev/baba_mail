@@ -13,14 +13,14 @@ To use Baba Mail, you will need to provide the following information:
 
 
 
-##Clone the repository::
+## Clone the repository::
 
 ```
 git clone https://github.com/baba-ahmed-dev/baba_mail.git
 ```
 
 
-##Install the dependencies:
+## Install the dependencies:
 
 ```
 cd baba_mail
@@ -30,16 +30,16 @@ pip install -r requirements.txt
 ```
 python manage.py migrate
 ```
-##Run the development server:
+## Run the development server:
 ```
 python manage.py runserver
 ```
 Visit `http://localhost:8000` in your web browser to see the application in action.
 
-##Contributing
+## Contributing
 If you would like to contribute to Baba Mail, please take a look at the contributing guidelines.
 
-##License
+## License
 Baba Mail is released under the [MIT License](LICENSE).
 
 Contact
